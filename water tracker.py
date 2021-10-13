@@ -25,7 +25,7 @@ def notify():
 	log()
 	return 0
 
-
+#main
 def starttime(time_interval):
 	while True:
 		time.sleep(time_interval)

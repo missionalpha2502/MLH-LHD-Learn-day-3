@@ -17,10 +17,16 @@ current_player = "X"
 
 # ------------- Functions ---------------
 
+# Function will clear the output screen 
+def clear_screen(x=100):
+         for i in range(100):
+                  print(" ")
+
 # Play a game of tic tac toe
 def play_game():
 
   # Show the initial game board
+  clear_screen()
   display_board()
 
   # Loop until the game stops (winner or tie)
@@ -79,6 +85,7 @@ def handle_turn(player):
   board[position] = player
 
   # Show the game board
+  clear_screen()
   display_board()
 
 

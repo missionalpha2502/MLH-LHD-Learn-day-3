@@ -10,6 +10,7 @@ def morse(txt):
     translation = ''
     
     
+
     if txt.startswith('.') or txt.startswith('−'):
         
         d_encrypt = dict([(v, k) for k, v in d.items()])
@@ -33,5 +34,6 @@ print(morse('HEY'))
 #hey
 print(morse('.--. -.-- - .... --- -.'))
 # PYTHON
+
 print(morse(morse('HEY')))
 # HEY
